@@ -4,6 +4,9 @@ out/
 target/
 META-INF/
 
+#Intellij files
+*.iml
+*.iws
 
 #Compiled class file
 *.class
