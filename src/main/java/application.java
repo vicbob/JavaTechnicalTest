@@ -14,10 +14,10 @@ public class application {
     }
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String filename = args[0];
         String operationType = args[1];
         String searchKey = args[2];
-        FileParser.searchFile(filename,operationType.toUpperCase(),searchKey.toUpperCase());
+        FileParser.searchFile(filename, operationType.toUpperCase(), searchKey.toUpperCase());
     }
 }

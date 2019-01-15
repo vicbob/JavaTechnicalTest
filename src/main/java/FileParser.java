@@ -85,6 +85,9 @@ public class FileParser {
                     }
                 }
             }
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("An error occured while parsing, \n" +
+                    "CHeck your file format and try again");
         } catch (Exception e) {
             System.out.println("File was not fully parsed as something went wrong");
             e.printStackTrace();
@@ -123,7 +126,6 @@ public class FileParser {
     Outputs a list of people associated with the searchKey city
      */
     static void searchByCity(String searchKey) {
-        System.out.println(searchKey);
         try {
             for (Person person : cityHashMap.get((searchKey))) {
                 System.out.println(person);
