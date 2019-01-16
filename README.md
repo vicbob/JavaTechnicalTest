@@ -1,4 +1,4 @@
-# JAVA FILE PROCESSOR
+# FILE PROCESSOR
 
 This program takes an input file, a search operation and a searchkey and writes the output to STDOUT. The input ﬁle represents a list of places and people at different times. There are two distinct formats(F1 and F2) mixed in the same ﬁle.
 
@@ -55,14 +55,19 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 1. You need to have JDK 1.8 or higher installed on your system.
-2. You need to set your system variables
+2. You need to set your system variables(If you would be using your terminal)
    Check online on how to set JAVA_HOME and Path variable for your OS.
+   To set Maven system variable check [here](https://maven.apache.org/install.html)
 3. A robust IDE for development(IntelliJ or netbeans)[optional].
 
 ### Usage
 
-- Simply clone or download this repository.
+- Clone or download this repository.
 - cd to project folder
+- Download dependencies with your IDE or in the terminal using
+```
+mvn dependency:resolve
+```
 - Compile using 
 ``` 
 javac {path for application.java} 
@@ -71,8 +76,12 @@ and run any of the supported commands without *-jar* flag.
 
 **OR**
 
-build to jar with your IDE and run any of the supported commands
+build to jar with your IDE or maven and run any of the supported commands
 
+You can also run the unit tests with your IDE or in the terminal with the command
+```
+mvn test
+```
 
 ## Built With
 * [Maven](https://maven.apache.org/) - Dependency Management
