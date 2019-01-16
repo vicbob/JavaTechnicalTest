@@ -87,7 +87,7 @@ public class FileParser {
             }
         }catch(ArrayIndexOutOfBoundsException e){
             System.out.println("An error occured while parsing, \n" +
-                    "CHeck your file format and try again");
+                    "Check your file format and try again");
         } catch (Exception e) {
             System.out.println("File was not fully parsed as something went wrong");
             e.printStackTrace();
