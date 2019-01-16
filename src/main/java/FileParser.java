@@ -48,6 +48,7 @@ public class FileParser {
     static void parse(char formatType, String line, String operationType, String searchKey) {
         try {
             if (formatType == '2') {
+                //Delete the character '-' from the line
                 StringBuilder lineStringBuilder = new StringBuilder(line);
                 lineStringBuilder.deleteCharAt(lineStringBuilder.lastIndexOf("-"));
                 line = lineStringBuilder.toString();
@@ -86,7 +87,7 @@ public class FileParser {
                 }
             }
         }catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("An error occured while parsing, \n" +
+            System.out.println("An error occurred while parsing, \n" +
                     "Check your file format and try again");
         } catch (Exception e) {
             System.out.println("File was not fully parsed as something went wrong");
